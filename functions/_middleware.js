@@ -18,6 +18,6 @@ export async function onRequest(context) {
   const isMobileDevice = isMobile || context.request.cf?.deviceType === "mobile";
   }
 
-  // 4. Desktop users ke liye redirect
+  // 3. Desktop users ke liye redirect
   return Response.redirect("https://google.com", 302);
 }
